@@ -1,20 +1,27 @@
 import '../styles/Buttons.css'
 import sounds  from '../data/sounds'
+import { useState } from 'react';
 
 const Buttons = () => {
 
+  const [audio, setAudio] = useState(null);
+  
  const playSound = (src) => {
-  const audio = new Audio(src);
-  audio.pause();
-  audio.currentTime = 0;
-  audio.play();
+  if (audio) {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+  const newAudio = new Audio(src);
+  newAudio.play();
+
+  setAudio(newAudio);
  };
 
  return (
   <div className="button-list">
     {sounds.map((sound) => (
-      <button key={sound.id} className="button" onClick={() => playSound(sound.src)}>
-        {sound.name}
+      <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+        {sound.emoji}
       </button>
     ))}
   </div>
