@@ -1,6 +1,8 @@
 *{
   min-width: 0;
   font: inherit;
+  background-color: rgb(28, 59, 65);
+  color:rgb(219, 219, 223)
 }
 
 *, *::before, *::after {

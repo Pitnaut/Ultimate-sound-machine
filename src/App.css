@@ -1,6 +1,8 @@
 .App-header h1 {
+  margin-left: .2rem;
+  margin-right: .2rem;
   font-size: 3rem;
-  font-family: "Workbench";
+  font-family: "Rubik Doodle Shadow";
   font-weight: 400;
   text-align: center;
 }
