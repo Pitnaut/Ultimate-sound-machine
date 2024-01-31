@@ -17,3 +17,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.categorie-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Rubik Doodle Shadow";
+}

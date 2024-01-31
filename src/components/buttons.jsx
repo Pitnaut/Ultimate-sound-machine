@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Buttons = () => {
 
-  const [audio, setAudio] = useState(null);
+const [audio, setAudio] = useState(null);
   
  const playSound = (src) => {
   if (audio) {
@@ -17,14 +17,59 @@ const Buttons = () => {
   setAudio(newAudio);
  };
 
+//  Categorías
+const sfxSounds = sounds.filter((sound) => sound.categoria === 'sfx');
+const memeSounds = sounds.filter((sound) => sound.categoria === 'memes');
+const musicSounds = sounds.filter((sound) => sound.categoria === 'musica');
+const gameSounds = sounds.filter((sound) => sound.categoria === 'videojuegos');
+
  return (
-  <div className="button-list">
-    {sounds.map((sound) => (
-      <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
-        {sound.emoji}
-      </button>
-    ))}
-  </div>
+  <>
+    <div className="categorie-container">
+      <h3>Ruiditos</h3>
+      <div className="button-list">
+        {sfxSounds.map((sound) => (
+          <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+            {sound.emoji}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div className="categorie-container">
+      <h3>Memes</h3>
+      <div className="button-list">
+        {memeSounds.map((sound) => (
+          <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+            {sound.emoji}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div className="categorie-container">
+      <h3>Juegos de video</h3>
+      <div className="button-list">
+        {gameSounds.map((sound) => (
+          <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+            {sound.emoji}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div className="categorie-container">
+      <h3>La música</h3>
+      <div className="button-list">
+        {musicSounds.map((sound) => (
+          <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+            {sound.emoji}
+          </button>
+        ))}
+      </div>
+    </div>
+  </>
+
 );
 };
 
