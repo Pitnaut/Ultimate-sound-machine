@@ -22,6 +22,7 @@ const sfxSounds = sounds.filter((sound) => sound.categoria === 'sfx');
 const memeSounds = sounds.filter((sound) => sound.categoria === 'memes');
 const musicSounds = sounds.filter((sound) => sound.categoria === 'musica');
 const gameSounds = sounds.filter((sound) => sound.categoria === 'videojuegos');
+const liljonSounds = sounds.filter((sound) => sound.categoria === 'liljon');
 
  return (
   <>
@@ -59,9 +60,20 @@ const gameSounds = sounds.filter((sound) => sound.categoria === 'videojuegos');
     </div>
 
     <div className="categorie-container">
-      <h3>La música</h3>
+      <h3>OST de tu vida</h3>
       <div className="button-list">
         {musicSounds.map((sound) => (
+          <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
+            {sound.emoji}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div className="categorie-container">
+      <h3>Yep, una categoría solo de Lil Jon</h3>
+      <div className="button-list">
+        {liljonSounds.map((sound) => (
           <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>
             {sound.emoji}
           </button>
