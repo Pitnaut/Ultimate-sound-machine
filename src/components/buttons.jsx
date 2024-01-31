@@ -60,7 +60,7 @@ const liljonSounds = sounds.filter((sound) => sound.categoria === 'liljon');
     </div>
 
     <div className="categorie-container">
-      <h3>OST de tu vida</h3>
+      <h3>¡Musicaliza tu vida!</h3>
       <div className="button-list">
         {musicSounds.map((sound) => (
           <button key={sound.name} className="button" onClick={() => playSound(sound.src)}>

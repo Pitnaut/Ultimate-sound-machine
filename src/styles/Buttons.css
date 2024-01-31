@@ -9,11 +9,11 @@
 }
 
 .button-list .button {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.8rem;
+  padding: .5rem;
   border-radius: 0.5rem;
-  border: 1px solid rgb(219, 219, 223);
-  background-color:rgb(168, 168, 209);
+  border: 1px solid rgb(128, 128, 179);
+  background-color:rgb(206, 206, 221);
   cursor: pointer;
   transition: all 0.3s ease;
 }

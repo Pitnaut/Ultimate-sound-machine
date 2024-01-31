@@ -69,7 +69,7 @@ import later from '../sounds/later.mp3';
 import punches from '../sounds/punches.mp3';
 import bonk from '../sounds/bonk.mp3';
 import violin from '../sounds/violin.mp3';
-import coffin from '../sounds/coffin.mp3';
+import cake from '../sounds/cake.mp3';
 import sadsong from '../sounds/sadsong.mp3';
 import french from '../sounds/french.mp3';
 import emotional from '../sounds/emotional.mp3';
@@ -131,7 +131,7 @@ const sounds = [
   {id: 29, src: snoopdog, name: 'snoopdog', emoji: '😎', categoria: 'musica'},
   {id: 30, src: spacejam, name: 'spacejam', emoji: '🏀', categoria: 'musica'},
   {id: 31, src: bomb, name: 'bomb', emoji: '💣', categoria: 'sfx'},
-  {id: 32, src: teleport, name: 'teleport', emoji: '🍃', categoria: 'sfx'},
+  {id: 32, src: teleport, name: 'teleport', emoji: '🚀', categoria: 'sfx'},
   {id: 33, src: dragonball, name: 'dragonball', emoji: '🐉', categoria: 'musica'},
   {id: 35, src: windows, name: 'windows', emoji: '💾', categoria: 'memes'},
   {id: 36, src: hadoken, name: 'hadoken', emoji: '🥋', categoria: 'videojuegos'},
@@ -171,7 +171,7 @@ const sounds = [
   {id: 70, src: punches, name: 'punches', emoji: '👊', categoria: 'sfx'},
   {id: 71, src: bonk, name: 'bonk', emoji: '🥊', categoria: 'sfx'},
   {id: 72, src: violin, name: 'violin', emoji: '🎻', categoria: 'musica'},
-  {id: 73, src: coffin, name: 'coffin', emoji: '⚰️', categoria: 'musica'},
+  {id: 73, src: cake, name: 'cake', emoji: '🍰', categoria: 'musica'},
   {id: 74, src: sadsong, name: 'sadsong', emoji: '😢', categoria: 'musica'},
   {id: 75, src: french, name: 'french', emoji: '🥖', categoria: 'musica'},
   {id: 76, src: emotional, name: 'emotional', emoji: '😭', categoria: 'memes'},
